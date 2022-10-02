@@ -36,6 +36,10 @@ body {
   border: 1px solid var(--off-white);
   padding: 1.5rem;
   border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.container:hover {
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
