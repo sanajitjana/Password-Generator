@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="Jv--UBpg4BBy5PIFRAEHx1Tf0WFk0YmhNBXXGFzWoqI"
+    />
+    <title>Password Generator</title>
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Password Generator" />
+    <link
+      rel="canonical"
+      href="https://itsme-subid.github.io/Password-Generator/"
+    />
+    <meta
+      name="twitter:card"
+      content="Password Generator generates a strong and secure password for you."
+    />
+    <meta property="twitter:title" content="Password Generator" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://itsme-subid.github.io/Password-Generator/assets/preview.png"
+    />
+    <meta property="og:site_name" content="Password-Generator" />
+    <meta property="og:title" content="Password Generator" />
+    <meta
+      property="og:description"
+      content="Password Generator generates a strong and secure password for you."
+    />
+    <meta property="og:image" itemprop="image" content="assets/preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta
+      property="og:url"
+      content="https://itsme-subid.github.io/Password-Generator/"
+    />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/predefine.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <div class="container mx-auto px-4">
+      <header>
+        <h1 class="text-4xl font-bold">
+          <a href="https://github.com/itsme-Subid/Password-Generator"
+            >Password Generator</a
+          >
+        </h1>
+        <img
+          draggable="false"
+          id="mode-toggler"
+          src="assets/mode.svg"
+          alt="Toggle"
+        />
+      </header>
+      <section>
+        <div class="password-output mb-6">
+          <input
+            type="text"
+            class="text"
+            id="password"
+            spellcheck="false"
+            readonly
+          />
+          <button type="button" class="btn-copy">
+            <img
+              draggable="false"
+              src="assets/copy.svg"
+              width="17"
+              height="20"
+              alt="Copy"
+            />
+          </button>
+          <button type="button" id="btn-generate">
+            <img
+              draggable="false"
+              src="assets/refresh.png"
+              width="17"
+              height="20"
+              alt="Refresh"
+            />
+          </button>
+        </div>
+        <div class="password-fields">
+          <h2 class="mb-3 text-xl">Customize your password</h2>
+          <div class="mb-3">Length(<span id="password-length">12</span>)</div>
+          <div class="password-input mb-3">
+            <input
+              type="number"
+              id="password-length-number"
+              min="1"
+              max="50"
+              value="12"
+            />
+            <input
+              type="range"
+              id="password-length-slider"
+              min="1"
+              max="50"
+              value="12"
+            />
+          </div>
+          <div class="checkboxes grid grid-rows-2 grid-flow-col gap-4 mb-6">
+            <span class="checkbox-container"
+              ><input type="checkbox" name="uppercase" id="uppercase" checked />
+              <label for="uppercase">Uppercase</label></span
+            >
+            <span class="checkbox-container"
+              ><input type="checkbox" name="lowercase" id="lowercase" checked />
+              <label for="lowercase">Lowercase</label></span
+            >
+            <span class="checkbox-container"
+              ><input type="checkbox" name="numbers" id="numbers" checked />
+              <label for="numbers">Numbers</label></span
+            >
+            <span class="checkbox-container"
+              ><input type="checkbox" name="symbols" id="symbols" checked />
+              <label for="symbols">Symbols</label></span
+            >
+          </div>
+        </div>
+        <button class="btn-copy">Copy Password</button>
+      </section>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
